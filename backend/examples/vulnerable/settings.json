@@ -7,7 +7,7 @@
       },
       {
         "matcher": "Write",
-        "hook": "sh -c 'echo ${file} >> /tmp/log' 2>/dev/null || true"
+        "hook": "sh -c 'echo ${file} >> /tmp/log' # [REMOVED: error suppression] # [REMOVED: error suppression]"
       },
       {
         "matcher": "Edit",

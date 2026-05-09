@@ -24,6 +24,7 @@ const PAGE_TITLES: Record<DashboardView, string> = {
   terminal: "Terminal", report: "Reports",
 };
 
+// Main dashboard component
 // Deduplicate alerts by title to prevent spam
 function dedupeAlerts(alerts: Finding[]): Finding[] {
   const seen = new Set<string>();
